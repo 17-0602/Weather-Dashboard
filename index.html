@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Weather Dashboard</Datag></title>
+</head>
+<body>
+    <header>
+        <h1 class="fs-1 fw-bold text-bg-primary p-3">Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col custom-col col-lg-4">
+            <h3 class="fs-1 fw-bold">Search for a city</h3>
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" id="searchCity" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success bg-primary text-white" type="button" id="searchBtn">Search</button>
+                  </form>
+                </div>
+              </nav>
+              <ul class="list-group" id="history">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul>
+          </div>
+          <div class="col-lg-7">
+            <div class="card bg-white" style="max-width: 840px;" id="currentWeather">
+                <div class="card-body">
+                  <h5 class="card-title fs-1 fw-bold" id="cityName">City</h5>
+                  <p id="date"></p>
+                  <img id="current-pic" alt="">
+                  <p class="card-text" id="cardTemp">Temp:</p>
+                  <p id="cardWind">Wind:</p>
+                  <p id="cardHum">Humidity:</p>
+                  <p id="cardUv">UV index:</p>
+                </div>
+
+            </div>
+            <div class="row">
+                  <h4 class="fw-bold">5-Day Forecast:</h4>
+              </div>
+
+              <div class="row row-cols-1 row-cols-md-3 g-5 d-flex">
+                <div class="col">
+                  <div class="card" id="cardWeather">
+                    <div class="card-body text-white">
+                      <h5 class="card-title fw-bold" id="cardDay">Card title</h5>
+                      <p class="card-text" id="cardTemp">Temp:</p>
+                      <p class="card-text" id="cardWind">Wind:</p>
+                      <p class="card-text" id="cardHum">Humidity:</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" id="cardWeather">
+                    <div class="card-body text-white">
+                      <h5 class="card-title fw-bold">Card title</h5>
+                      <p class="card-text" id="cardTemp">Temp:</p>
+                      <p class="card-text" id="cardWind">Wind:</p>
+                      <p class="card-text" id="cardHum">Humidity:</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" id="cardWeather">
+                    <div class="card-body text-white">
+                      <h5 class="card-title fw-bold">Card title</h5>
+                      <p class="card-text" id="cardTemp">Temp:</p>
+                      <p class="card-text" id="cardWind">Wind:</p>
+                      <p class="card-text" id="cardHum">Humidity:</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" id="cardWeather">
+                    <div class="card-body text-white">
+                      <h5 class="card-title fw-bold">Card title</h5>
+                      <p class="card-text" id="cardTemp">Temp:</p>
+                      <p class="card-text" id="cardWind">Wind:</p>
+                      <p class="card-text" id="cardHum">Humidity:</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="cardWeather">
+                      <div class="card-body text-white">
+                        <h5 class="card-title fw-bold">Card title</h5>
+                        <p class="card-text" id="cardTemp">Temp:</p>
+                        <p class="card-text" id="cardWind">Wind:</p>
+                        <p class="card-text" id="cardHum">Humidity:</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+      </div>
+    <div class="container-fluid">
+    <script src="/assets/script.js"></script>
+</body>
+</html>
